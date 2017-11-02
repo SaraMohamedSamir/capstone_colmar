@@ -1,0 +1,410 @@
+html {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  color: #b3b3b3;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header style settings */
+.desktop {
+  padding: 0 24px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #003249;
+  height: 64px;
+}
+
+.logo , .navigate {
+  align-items: center;
+  height: 32px;
+}
+
+
+.logo img {
+  padding-right: 10px;
+}
+
+.logo h1 span {
+  color: rgb(156, 156, 156);
+}
+
+.navigate {
+  align-items: center;
+}
+
+ .mobile {
+   display: none;
+ }
+
+.navigate a {
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 470px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    height: 64px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/* Main banner style settings */
+.main-banner {
+  background-color: rgb(156, 156, 156);
+}
+
+.banner-img {
+  padding: 32px 32px 42px 24px;
+  width: 60%;
+  height: auto;
+}
+
+.banner-img img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-info {
+  flex-flow: wrap column;
+  padding-right: 24px;
+  justify-content: center;
+}
+
+.banner-info h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner-info h2 {
+  margin: 40px 0;
+  font-weight: bold;
+}
+
+.banner-info a {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Animation for start button */
+.banner-info a:hover {
+  background-color: Grey;
+}
+
+.text-holder h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text-holder h4 {
+  font-weight: lighter;
+  color: #b3b3b3;
+  padding: 12px 0;
+}
+
+.text-holder a {
+  color: #33adff;
+}
+
+/* Animation for start button */
+.text-holder a:hover {
+  color: #333;
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-img {
+    padding: 0;
+    width: 100%;
+  }
+
+  .banner-img img {
+    object-fit: cover;
+  }
+
+  .banner-info {
+    padding: 0;
+    width: 400px;
+  }
+}
+
+/* Practice section style settings */
+.practice .main {
+  padding: 32px 24px;
+  width: 60%;
+  border-right: 1px solid rgb(156, 156, 156);
+}
+.practice-img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 32px;
+}
+
+.practice-img img {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  border-bottom: 1px solid rgb(156, 156, 156);
+}
+
+.main h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.main .quoted {
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.about-campus .img-holder .mobile-img {
+  display: none;
+}
+
+.about-campus {
+  flex-direction: column;
+}
+
+.inf-holder {
+  min-height: 168px;
+  border-bottom: 1px solid rgb(156, 156, 156);
+}
+
+.inf-holder .img-holder {
+  max-width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.inf-holder .img-holder img {
+  width: 100%;
+  height: auto;
+}
+
+.inf-holder .text-holder {
+  flex-flow: wrap column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 470px) {
+  .main {
+    display: none;
+  }
+
+  .about-campus .img-holder .desktop-img {
+    display: none;
+  }
+
+  .inf-holder .img-holder .mobile-img {
+    display: block;
+  }
+
+  .inf-holder {
+    flex-direction: column;
+    border-bottom: 0;
+  }
+  .inf-holder .img-holder {
+    max-width: 100%;
+    height: auto;
+    margin: 16px;
+  }
+
+  .inf-holder .text-holder {
+    flex-flow: wrap column;
+    justify-content: center;
+    padding: 32px;
+  }
+}
+/* Learning section's style settings */
+.learning {
+  flex-direction: column;
+  background-color: rgb(156, 156, 156);
+}
+
+.learning h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 40px 0;
+}
+
+.courses-holder {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+  padding: 0 40px 56px 56px;
+}
+
+.course-holder {
+  width: 30%;
+  margin: 16px;
+  background-color: #fff;
+}
+
+.course-img-holder img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course-txt-holder {
+  padding: 16px;
+}
+
+.course-txt-holder h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.course-txt-holder h3 {
+  font-size: 1.2rem;
+  padding: 15px 8px 0 0;
+  font-weight: lighter;
+}
+
+.course-txt-holder h3, .course-txt-holder p {
+  color: #b3b3b3;
+}
+
+@media only screen and (max-width: 470px) {
+  .learning {
+    background-color: #F8F8FF;
+    border-top: 1px solid rgb(156, 156, 156);
+    border-bottom: 1px solid rgb(156, 156, 156);
+  }
+
+  .courses-holder {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0 32px 32px 32px;
+  }
+
+  .course-holder {
+    width: 360px;
+    height: 75px;
+    text-align: center;
+    background-color: rgb(156, 156, 156);
+    border-radius: 5px;
+  }
+
+  .course-img-holder {
+    display: none;
+  }
+
+  .course-txt-holder {
+    padding: 24px;
+  }
+
+  .course-txt-holder h3, .course-txt-holder p {
+    display: none;
+  }
+}
+
+/* Thesis section's style settngs*/
+.thesis h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 32px 0;
+  font-weight: bold;
+}
+
+.thesis-video-holder {
+  width: 60%;
+  padding: 0 24px;
+  margin-top: 16px;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis-txt-holder {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.thesis-txt-holder h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding-bottom: 8px;
+}
+
+.thesis-txt-holder p {
+  word-break: break-all;
+}
+
+.thesis-info {
+  flex-direction: column;
+}
+
+.thesis-fisma, .thesis-now {
+  border-bottom: 0;
+}
+
+@media only screen and (max-width: 470px) {
+  .thesis-txt-holder, .thesis-info {
+    display: none;
+  }
+
+  .thesis-video-holder {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .thesis h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 24px 0;
+    font-weight: bold;
+  }
+}
+
+/* Footer section style settings */
+footer {
+  justify-content: space-between;
+  border-top: 1px solid rgb(156, 156, 156);
+  align-items: center;
+  padding: 0 24px 24px 24px;
+}
+
+footer a {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 0.85rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .links {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+    padding: 32px;
+  }
+}
