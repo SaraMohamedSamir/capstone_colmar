@@ -49,19 +49,6 @@ p {
   margin-left: 16px;
 }
 
-@media only screen and (max-width: 470px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: flex;
-    height: 64px;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-
 /* Main banner style settings */
 .main-banner {
   background-color: rgb(156, 156, 156);
@@ -126,29 +113,6 @@ p {
   color: #333;
 }
 
-@media only screen and (max-width: 470px) {
-  .main-banner {
-    flex-wrap: wrap;
-    height: 600px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .banner-img {
-    padding: 0;
-    width: 100%;
-  }
-
-  .banner-img img {
-    object-fit: cover;
-  }
-
-  .banner-info {
-    padding: 0;
-    width: 400px;
-  }
-}
-
 /* Practice section style settings */
 .practice .main {
   padding: 32px 24px;
@@ -210,35 +174,6 @@ p {
   justify-content: center;
 }
 
-@media only screen and (max-width: 470px) {
-  .main {
-    display: none;
-  }
-
-  .about-campus .img-holder .desktop-img {
-    display: none;
-  }
-
-  .inf-holder .img-holder .mobile-img {
-    display: block;
-  }
-
-  .inf-holder {
-    flex-direction: column;
-    border-bottom: 0;
-  }
-  .inf-holder .img-holder {
-    max-width: 100%;
-    height: auto;
-    margin: 16px;
-  }
-
-  .inf-holder .text-holder {
-    flex-flow: wrap column;
-    justify-content: center;
-    padding: 32px;
-  }
-}
 /* Learning section's style settings */
 .learning {
   flex-direction: column;
@@ -289,40 +224,6 @@ p {
   color: #b3b3b3;
 }
 
-@media only screen and (max-width: 470px) {
-  .learning {
-    background-color: #F8F8FF;
-    border-top: 1px solid rgb(156, 156, 156);
-    border-bottom: 1px solid rgb(156, 156, 156);
-  }
-
-  .courses-holder {
-    flex-wrap: nowrap;
-    flex-direction: column;
-    padding: 0 32px 32px 32px;
-  }
-
-  .course-holder {
-    width: 360px;
-    height: 75px;
-    text-align: center;
-    background-color: rgb(156, 156, 156);
-    border-radius: 5px;
-  }
-
-  .course-img-holder {
-    display: none;
-  }
-
-  .course-txt-holder {
-    padding: 24px;
-  }
-
-  .course-txt-holder h3, .course-txt-holder p {
-    display: none;
-  }
-}
-
 /* Thesis section's style settngs*/
 .thesis h1 {
   font-size: 2.5rem;
@@ -365,7 +266,120 @@ p {
   border-bottom: 0;
 }
 
+/* Footer section style settings */
+footer {
+  justify-content: space-between;
+  border-top: 1px solid rgb(156, 156, 156);
+  align-items: center;
+  padding: 0 24px 24px 24px;
+}
+
+footer a {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 0.85rem;
+}
+
+/*Mopile style settings*/
 @media only screen and (max-width: 470px) {
+
+  /* Header style settings */
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    height: 64px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* Main banner style settings */
+  .main-banner {
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-img {
+    padding: 0;
+    width: 100%;
+  }
+
+  .banner-img img {
+    object-fit: cover;
+  }
+
+  .banner-info {
+    padding: 0;
+    width: 400px;
+  }
+
+  /* Practice section style settings */
+  .main {
+    display: none;
+  }
+
+  .about-campus .img-holder .desktop-img {
+    display: none;
+  }
+
+  .inf-holder .img-holder .mobile-img {
+    display: block;
+  }
+
+  .inf-holder {
+    flex-direction: column;
+    border-bottom: 0;
+  }
+  .inf-holder .img-holder {
+    max-width: 100%;
+    height: auto;
+    margin: 16px;
+  }
+
+  .inf-holder .text-holder {
+    flex-flow: wrap column;
+    justify-content: center;
+    padding: 32px;
+  }
+
+  /* Learning section's style settings */
+  .learning {
+    background-color: #F8F8FF;
+    border-top: 1px solid rgb(156, 156, 156);
+    border-bottom: 1px solid rgb(156, 156, 156);
+  }
+
+  .courses-holder {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0 32px 32px 32px;
+  }
+
+  .course-holder {
+    width: 360px;
+    height: 75px;
+    text-align: center;
+    background-color: rgb(156, 156, 156);
+    border-radius: 5px;
+  }
+
+  .course-img-holder {
+    display: none;
+  }
+
+  .course-txt-holder {
+    padding: 24px;
+  }
+
+  .course-txt-holder h3, .course-txt-holder p {
+    display: none;
+  }
+
+  /* Thesis section's style settngs*/
   .thesis-txt-holder, .thesis-info {
     display: none;
   }
@@ -382,23 +396,8 @@ p {
     padding: 24px 0;
     font-weight: bold;
   }
-}
 
-/* Footer section style settings */
-footer {
-  justify-content: space-between;
-  border-top: 1px solid rgb(156, 156, 156);
-  align-items: center;
-  padding: 0 24px 24px 24px;
-}
-
-footer a {
-  display: inline-block;
-  margin-left: 16px;
-  font-size: 0.85rem;
-}
-
-@media only screen and (max-width: 470px) {
+  /* Footer section style settings */
   .links {
     display: none;
   }
